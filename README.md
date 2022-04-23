@@ -38,7 +38,25 @@ double fcn(double *x, double *params)
 
 ## Lab4 <a name="Lab4"></a>
 `lab4.c` - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_4_EN) (21.03.2022) <br>
-
+![image](https://user-images.githubusercontent.com/87480906/164905937-3de4698c-5994-4d66-87f6-698bc6b8462b.png)
+```c
+double fcn(double *x, double *params)
+	{
+		if((0 <= x[0]*x[1]) &&  (x[0]*x[1]<= TMath::Pi()))
+			return params[0]*TMath::Sin(x[0]*x[1]);
+		return 0;
+	}
+```
+![image](https://user-images.githubusercontent.com/87480906/164906289-2276233a-97c6-4a52-93e6-fa16c91b3cef.png)
+![image](https://user-images.githubusercontent.com/87480906/164906467-d6e839f0-59d6-4cfd-872b-50f38bcc8d0e.png)
+randomly select from the probability distribution a pair of numbers (x,y) and then fill with the a histogram of the probability distribution f(x,y): <br>
+```c
+	double px, py;
+	for (Int_t i = 0; i < 50000; i++) {
+		fun1->GetRandom2(px,py); // fun1 determines values
+		fun2->Fill(px,py); //fun2 is TH2D histogram 
+	}
+```
 ## Lab5 <a name="Lab5"></a>
 `lab5.c` - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_5_EN) (28.03.2022) <br>
 
@@ -88,12 +106,23 @@ double fcn(double *x, double *params)
 >>	`gr -> SetMarkerStyle(22);` <br>
 
 > **Draw options**
->> `gr -> Draw("AP");` Points without lines between <br>
+>> `gr -> Draw("AP");` Only points <br>
+>> >> `gr -> Draw("APL");` Connect points with a line
 
 ## TGraph2D <a name="TGraph2D"></a>
 >**Create TGraph2D** <br>
   >> `TGraph2D *g = new TGraph2D();` <br>
+> **Normalize TH2D**
+>> `fun2->Scale(1./fun2->Integral());` <br>
+> **Draw options**
+>> `fun3->Draw("lego1");` <br>
+## TH1D
 
+## TH2D
+>**Create TH2D** <br>
+>> `TH2D *fun2 = new TH2D("fun2", "gestosc", 20, xmin, xmax, 20, ymin, ymax);`<br>
+> **Filling with data** <br>
+>> `fun2->Fill(px,py);`<br>
 ## TCanvas <a name="TCanvas"></a>
 > **Create window** <br>
 >> `TCanvas *c1 = new TCanvas("c1", "window 1", 10, 10, 800, 800);` <br>
