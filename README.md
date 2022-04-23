@@ -65,7 +65,17 @@ double fcn(double *x, double *params)
 >> where `nparams` is number of parameters <br>
 
 > **Set Parameters**
->>
+>> `fun1->SetParameters(1,1,2);` <br>
+
+> **Style TF2**
+>> `fun1->SetTitle("Gestosc");` <br>
+>> `fun1->GetXaxis()->SetTitle("x");`<br>
+>> `fun1->GetYaxis()->SetTitle("y");`<br>
+>> `fun1->GetZaxis()->SetTitle("f(x,y)");`<br>
+
+> **Draw options**
+>> `fun1->Draw("Surf1");`<br>
+
 ## TGraph <a name="TGraph"></a>
 >**Create TGraph** <br>
   >> `TGraph* gr = new TGraph();` <br>
@@ -79,6 +89,10 @@ double fcn(double *x, double *params)
 
 > **Draw options**
 >> `gr -> Draw("AP");` Points without lines between <br>
+
+## TGraph2D <a name="TGraph2D"></a>
+>**Create TGraph2D** <br>
+  >> `TGraph2D *g = new TGraph2D();` <br>
 
 ## TCanvas <a name="TCanvas"></a>
 > **Create window** <br>
@@ -94,15 +108,47 @@ double fcn(double *x, double *params)
 First you need to normalize given function, for example:<br>
 `TF1 *fun1 = new TF1("fun1", "1./[0] * TMath::Exp(-x/[0])", 0, 50);` <br>
 by dividing it by: `Double_t a = fun1 -> Integral(0,50);`. <br>
-then `fun1->SetParameter(0, a);` <br>
+then `fun1->SetParameter(0, 1/a);` <br>
 and draw it: `fun1->Draw();` <br>
 
 ## Cumulative distribution (more in `lab1.c`)
 After all steps from _Probability distribution_: <br>
 by dividing it by: `Double_t a = fun1 -> Integral(0,50);`. <br>
 then `fun1->SetParameter(0, a);` <br>
-and draw it: `fun1->DrawIntegral();` <br>
+and draw it: `fun1->DrawIntegral();` <br> <br>
+For 2D: <br>
+```c
+TGraph2D *g = new TGraph2D();
+	int count = 0;
+	for(Double_t xs = 0; xs <=1 ; xs+= 1./30){
+		for(Double_t ys=0; ys <=1 ; ys+= 1./30 )
+		{
+			g->SetPoint(count, xs, ys, fun1->Integral(0,xs, 0, ys));
+			count++;
+		}
+	}
+```
 
+## Marginal distribution
+![image](https://user-images.githubusercontent.com/87480906/164903038-cee06d37-d5a1-4ba5-b276-9c8850a2e2bc.png)
+### g(x)
+```c
+TGraph *fung = new TGraph();
+	int count1 = 0;
+	for(Double_t xs = 0; xs <=1 ; xs+= 1./30){
+		fung -> SetPoint(count1, xs, fun1->Integral(xs-1./100,xs,0,1));
+		count1++;
+	}
+```
+### h(y)
+```c
+TGraph *funh = new TGraph();
+	int count2 = 0;
+	for(Double_t ys = 0; ys <=1 ; ys+= 1./30){
+		funh -> SetPoint(count2, ys, fun1->Integral(0,1, ys-1./100,ys));
+		count2++;
+	}
+```
 ## Probability  P(5 <= X <= 10) (more in `lab1.c`)
 After all steps from _Probability distribution_, do:  `Double_t b = fun1 -> Integral(5,10);` <br>
 
