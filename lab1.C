@@ -53,5 +53,5 @@ int lab1 () {
 	*/
 	for (Int_t i=0; i <nq; i++)
 		cout << yq[i] << endl;
-	
+	return 0;	
 }
