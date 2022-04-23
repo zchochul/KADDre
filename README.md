@@ -25,6 +25,16 @@
 
 ## Lab3 <a name="Lab3"></a>
 `lab3.c` - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_3_EN) (14.03.2022) <br>
+![image](https://user-images.githubusercontent.com/87480906/164895932-e5ea2389-2bdb-4ad6-b4f6-10878bdca759.png)
+```c
+double fcn(double *x, double *params)
+	{
+		if(x[0]>=0 && x[0] <= 1 && x[1]>=0 && x[0] <= 1 )
+			return params[0]*TMath::Power(x[0], params[1])*TMath::Power(x[1], params[2]);
+		return 0;
+	}
+```
+![image](https://user-images.githubusercontent.com/87480906/164895944-9d971d97-18cf-43a9-88ed-3b3a41e59792.png)
 
 ## Lab4 <a name="Lab4"></a>
 `lab4.c` - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_4_EN) (21.03.2022) <br>
@@ -39,7 +49,7 @@
 > **Create function using TF1** <br>
 >> `TF1 *fun1= new TF1("fun1", "TMath::Sin(x)", 0, 2*TMath::Pi());` <br>
 
-> **Set Parameters**
+> **Set Parameter**
 >> `TF1 *fun1 = new TF1("fun1", "1./[0] * TMath::Exp(-x/[0])", 0, 50);`<br>
 >>	`fun1->SetParameter(0, 6);`<br>
 
@@ -49,6 +59,13 @@
 > **Draw options**
 >> `fun2 -> Draw("same");` <br>
 
+## TF2 <a name="TF2"></a>
+> **Create function using TF2** <br>
+>> `TF2 *fun1 = new TF2("fun1",fcn,xmin,xmax,ymin,ymax,nparams);` <br>
+>> where `nparams` is number of parameters <br>
+
+> **Set Parameters**
+>>
 ## TGraph <a name="TGraph"></a>
 >**Create TGraph** <br>
   >> `TGraph* gr = new TGraph();` <br>
