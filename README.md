@@ -105,10 +105,12 @@ Read data from file (the same as in C++):<br>
 
 
 ## Lab7 <a name="Lab7"></a>
-[`lab16.c`](https://github.com/zchochul/KADDre/blob/main/lab16.c)  - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_7_EN) (11.04.2022)
+[`lab16.c`](https://github.com/zchochul/KADDre/blob/main/lab16.c)  - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_7_EN) (11.04.2022) <br>
+![image](https://user-images.githubusercontent.com/87480906/164980971-e1f589da-f099-481e-8a34-f45c41ca0131.png)<br>
+![image](https://user-images.githubusercontent.com/87480906/164980986-a61af6a0-0b27-4d7c-afa8-d95d918e2382.png)<br>
 
 ## Lab8 <a name="Lab8"></a>
-[`lab8.c`](https://github.com/zchochul/KADDre/blob/main/lab8.c)  - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_8) (18.04.2022)
+[`lab8.c`](https://github.com/zchochul/KADDre/blob/main/lab8.c)  - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_8) (18.04.2022)<br>
 ![image](https://user-images.githubusercontent.com/87480906/164978627-80d33f71-de3c-4357-a8a4-a289f4064941.png)<br>
 ![image](https://user-images.githubusercontent.com/87480906/164978634-d52f9ece-7cff-48c8-acef-19135dac004d.png)<br>
 Rot Gaussian distribution you can use:
