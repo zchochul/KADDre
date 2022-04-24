@@ -11,11 +11,21 @@
 # Root help ;)
 1. [TF1](#TF1)
 2. [TGraph](#TGraph)
-3. [TCanvas](#TCanvas)
+3. [TF2](#TF2)
+4. [TH1D](#TH1D)
+5. [TH2D](#TH2D)
+6. [TGraph](#Tgraph)
+7. [TGraph2D](#TGraph2D)
+8. [TCanvas](#TCanvas)
 # Math help ;)
 1. [Probability distribution](#PDF)
 2. [Cumulative distribution](#cumulativ)
 3. [Marginal distribution](#Marginal)
+4. [Probability  P(5 <= X <= 10)](#PDF)
+5. [Expected value](#expect)
+6. [Variance](#variance)
+7. [Mode](#Mode)
+8. [Quantiles](#Quantiles)
 
 ## Lab1 <a name="Lab1"></a>
 [`test.c`](https://github.com/zchochul/KADDre/blob/main/test.C) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_1_EN) (28.02.2022) <br>
@@ -136,8 +146,6 @@ randomly select from the probability distribution a pair of numbers (x,y) and th
 >> `fun2->Scale(1./fun2->Integral());` <br>
 > **Draw options**
 >> `fun3->Draw("lego1");` <br>
-## TH1D
-
 
 ## TCanvas <a name="TCanvas"></a>
 > **Create window** <br>
