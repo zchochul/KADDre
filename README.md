@@ -14,7 +14,7 @@
 3. [TF2](#TF2)
 4. [TH1D](#TH1D)
 5. [TH2D](#TH2D)
-6. [TGraph](#Tgraph)
+6. [TGraph](#TGraph)
 7. [TGraph2D](#TGraph2D)
 8. [TCanvas](#TCanvas)
 # Math help ;)
@@ -24,8 +24,11 @@
 4. [Probability  P(5 <= X <= 10)](#PDF)
 5. [Expected value](#expect)
 6. [Variance](#variance)
-7. [Mode](#Mode)
-8. [Quantiles](#Quantiles)
+7. [Standard deviation](#std)
+8. [Covariance](#covariance)
+9. [Correlation coefficient rho(X,Y)](#cor coef rho)
+10. [Mode](#Mode)
+11. [Quantiles](#Quantiles)
 
 ## Lab1 <a name="Lab1"></a>
 [`test.c`](https://github.com/zchochul/KADDre/blob/main/test.C) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_1_EN) (28.02.2022) <br>
@@ -129,12 +132,20 @@ randomly select from the probability distribution a pair of numbers (x,y) and th
 > **Draw options** <br>
 >> `hist -> Draw();` <br>
 
+> **Projection of TH2D on TH1D** <br> (like in [`lab4.c`](https://github.com/zchochul/KADDre/blob/main/lab4.c))
+>> Creating: `TH1D * projh2Y = fun2->ProjectionY();` <br>
+
 ## TH2D <a name="TH2D"></a>
 >**Create TH2D** <br>
->> `TH2D *fun2 = new TH2D("fun2", "gestosc", 20, xmin, xmax, 20, ymin, ymax);`<br>
+>> `TH2D *fun2 = new TH2D("fun2", "gestosc", 20, xmin, xmax, 20, ymin, ymax);`<br> (like in [`lab4.c`](https://github.com/zchochul/KADDre/blob/main/lab4.c))
 
 > **Filling with data** <br>
->> `fun2->Fill(px,py);`<br>
+>> `fun2->Fill(px,py);`<br> (like in [`lab4.c`](https://github.com/zchochul/KADDre/blob/main/lab4.c))
+>>  `fun3->SetBinContent(xs, ys, fun2->Integral(0,xs, 0, ys));` (like in [`lab4.c`](https://github.com/zchochul/KADDre/blob/main/lab4.c))
+
+> **Draw options** <br>
+>> `fun2->Draw("lego1");` <br> (like in [`lab4.c`](https://github.com/zchochul/KADDre/blob/main/lab4.c))
+>> ![image](https://user-images.githubusercontent.com/87480906/164973419-23b222f4-cda7-4aa9-b06c-4630c5e0f0d7.png)<br>
 
 ## TGraph <a name="TGraph"></a>
 >**Create TGraph** <br>
@@ -180,7 +191,9 @@ First you need to normalize given function, for example:<br>
 `TF1 *fun1 = new TF1("fun1", "1./[0] * TMath::Exp(-x/[0])", 0, 50);` <br>
 by dividing it by: `Double_t a = fun1 -> Integral(0,50);`. <br>
 then `fun1->SetParameter(0, 1/a);` <br>
-and draw it: `fun1->Draw();` <br>
+and draw it: `fun1->Draw();` <br> <br>
+
+Or you can use `Scale` function: ` fun2->Scale(1./fun2->Integral());` (like in [`lab4.c`](https://github.com/zchochul/KADDre/blob/main/lab4.c))<br> 
 
 ## Cumulative distribution (more in  [`lab1.c`](https://github.com/zchochul/KADDre/blob/main/lab1.C)) <a name="cumulativ"></a>
 After all steps from _Probability distribution_: <br>
@@ -224,10 +237,28 @@ TGraph *funh = new TGraph();
 After all steps from _Probability distribution_, do:  `Double_t b = fun1 -> Integral(5,10);` <br>
 
 ## Expected value (more in [`lab1.c`](https://github.com/zchochul/KADDre/blob/main/lab1.C)) <a name="expect"></a>
-After all steps from _Probability distribution_, do: `Double_t mean = fun1 -> Mean(0,50);` <br>
+After all steps from _Probability distribution_, do: `Double_t mean = fun1 -> Mean(0,50);` <br><br>
+
+If you use TH2D and you want to obtain E(X) and E(Y) (like in [`lab4.c`](https://github.com/zchochul/KADDre/blob/main/lab4.c)) use: <br>
+```c
+	double Ex = fun2 -> GetMean(1);
+	double Ey = fun2 -> GetMean(2);
+```
 
 ## Variance (more in [`lab1.c`](https://github.com/zchochul/KADDre/blob/main/lab1.C)) <a name="variance"></a>
 After all steps from _Probability distribution_, do: `Double_t variance = fun1 -> Variance(0,50);` <br>
+
+## Standard deviation <a name="std"></a>
+Standard deviation is the square root of the variance. When you want to use it on **TH2D** (like in [`lab4.c`](https://github.com/zchochul/KADDre/blob/main/lab4.c)) use `GetRMS(<number of axis>)`, for example: <br>
+```c
+	double sigmax = fun2 -> GetRMS(1);
+	double sigmay = fun2 -> GetRMS(2);
+```
+## Covariance (like in [`lab4.c`](https://github.com/zchochul/KADDre/blob/main/lab4.c)) <a name="covariance"></a>
+To obtain covariance use: `double covxy = fun2 -> GetCovariance(1,2);`<br>
+
+## Correlation coefficient rho(X,Y)  (like in [`lab4.c`](https://github.com/zchochul/KADDre/blob/main/lab4.c)) <a name="cor coef rho"></a>
+To obtain correlation coefficient use: `double corfac = fun2 -> GetCorrelationFactor(1,2);`<br>
 
 ## Mode (more in [`lab1.c`](https://github.com/zchochul/KADDre/blob/main/lab1.C)) <a name="Mode"></a>
 After all steps from _Probability distribution_, do: `Double_t mode = fun1 -> GetMaximumX(0,50);` <br>
