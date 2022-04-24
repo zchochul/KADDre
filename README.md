@@ -1,4 +1,5 @@
 # KADDre
+This repository is based on the laboratories for the subject Komputerowa Analiza Danych Doświadczalnych (KADD) taught at WUT. For more info open [dr Łukasz Graczykowski's website](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2021/2022).
 # Laboratories
 1. [Lab1](#Lab1)
 2. [Lab2](#Lab2)
@@ -30,6 +31,8 @@
 10. [Correlation coefficient rho(X,Y)](#cor_coef_rho)
 11. [Mode](#Mode)
 12. [Quantiles](#Quantiles)
+13. [Linear congruent generator of pseudorandom numbers](#LCG)
+14. [ Spectral test](#spectral_test)
 
 ## Lab1 <a name="Lab1"></a>
 [`test.c`](https://github.com/zchochul/KADDre/blob/main/test.C) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_1_EN) (28.02.2022) <br>
@@ -96,6 +99,9 @@ Read data from file (the same as in C++):<br>
 
 ## Lab6 <a name="Lab6"></a>
 [`lab6.c`](https://github.com/zchochul/KADDre/blob/main/lab6.c) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_6_EN) (04.04.2022) <br>
+![image](https://user-images.githubusercontent.com/87480906/164976280-28f80e4f-e35c-4260-bcc8-ee6c119dbd01.png)<br>
+![image](https://user-images.githubusercontent.com/87480906/164976293-4f0f1ff8-030d-46e3-b3f4-a8e2d1c19946.png)<br>
+
 
 ## Lab7 <a name="Lab7"></a>
 [`lab16.c`](https://github.com/zchochul/KADDre/blob/main/lab16.c)  - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_7_EN) (11.04.2022)
@@ -310,7 +316,16 @@ After all steps from _Probability distribution_, do:  <br>
 	Double_t yq[nq];
 	fun1->GetQuantiles(nq,yq,xq);
 ```
+## Linear congruent generator of pseudorandom numbers (more in [`lab6.c`](https://github.com/zchochul/KADDre/blob/main/lab6.c) <a name="LCG"></a>
+Generator based on formula: `x[j+1] = (g*x[j] + c) mod m.`. By providing first value `x[0]` defines whole series. There are few conditions:
+1. c and m do not have joint divisors,
+2. b = g-1 is a multiply of every prime number p, which is a divisor of a number m,
+3. b is a multiply of 4 if n is also a multiply of 4.
 
+When `c=0` then we get multiplicative generator (MLCG).
+
+## Spectral test (more in [`lab6.c`](https://github.com/zchochul/KADDre/blob/main/lab6.c)) <a name="spectral_test"></a>
+Plot `(x[n], x[n+1])` to see the quality of the generator.  The obtained graph will show a spectral pattern of the generator - hence the name of the test. If the points are distributed uniformly, the test can be judged good.
 
 ## Useful snipets from documentation!
 TF1 - [here](https://root.cern.ch/doc/master/classTF1.html)<br>
