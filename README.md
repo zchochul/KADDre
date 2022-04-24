@@ -1,15 +1,21 @@
 # KADDre
-# Table of contents
+# Laboratories
 1. [Lab1](#Lab1)
 2. [Lab2](#Lab2)
 3. [Lab3](#Lab3)
 4. [Lab4](#Lab4)
 5. [Lab5](#Lab5)
-7. [Lab6](#Lab6)
-8. [TF1](#TF1)
-9. [TGraph](#TGraph)
-10. [TCanvas](#TCanvas)
-
+6. [Lab6](#Lab6)
+7. [Lab7](#Lab7)
+8. [Lab8](#Lab8)
+# Root help ;)
+1. [TF1](#TF1)
+2. [TGraph](#TGraph)
+3. [TCanvas](#TCanvas)
+# Math help ;)
+1. [Probability distribution](#PDF)
+2. [Cumulative distribution](#cumulativ)
+3. [Marginal distribution](#Marginal)
 
 ## Lab1 <a name="Lab1"></a>
 [`test.c`](https://github.com/zchochul/KADDre/blob/main/test.C) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_1_EN) (28.02.2022) <br>
@@ -100,6 +106,14 @@ randomly select from the probability distribution a pair of numbers (x,y) and th
 > **Draw options**
 >> `fun1->Draw("Surf1");`<br>
 
+## TH1D <a name="TH1D"></a>
+
+## TH2D <a name="TH2D"></a>
+>**Create TH2D** <br>
+>> `TH2D *fun2 = new TH2D("fun2", "gestosc", 20, xmin, xmax, 20, ymin, ymax);`<br>
+> **Filling with data** <br>
+>> `fun2->Fill(px,py);`<br>
+
 ## TGraph <a name="TGraph"></a>
 >**Create TGraph** <br>
   >> `TGraph* gr = new TGraph();` <br>
@@ -124,11 +138,7 @@ randomly select from the probability distribution a pair of numbers (x,y) and th
 >> `fun3->Draw("lego1");` <br>
 ## TH1D
 
-## TH2D
->**Create TH2D** <br>
->> `TH2D *fun2 = new TH2D("fun2", "gestosc", 20, xmin, xmax, 20, ymin, ymax);`<br>
-> **Filling with data** <br>
->> `fun2->Fill(px,py);`<br>
+
 ## TCanvas <a name="TCanvas"></a>
 > **Create window** <br>
 >> `TCanvas *c1 = new TCanvas("c1", "window 1", 10, 10, 800, 800);` <br>
@@ -139,14 +149,14 @@ randomly select from the probability distribution a pair of numbers (x,y) and th
  > **Drawing in window** <br>
   >> `c1-> cd(1);` <br>
 
-## Probability distribution (more in `lab1.c`)
+## Probability distribution (more in `lab1.c`) <a name="PDF"></a>
 First you need to normalize given function, for example:<br>
 `TF1 *fun1 = new TF1("fun1", "1./[0] * TMath::Exp(-x/[0])", 0, 50);` <br>
 by dividing it by: `Double_t a = fun1 -> Integral(0,50);`. <br>
 then `fun1->SetParameter(0, 1/a);` <br>
 and draw it: `fun1->Draw();` <br>
 
-## Cumulative distribution (more in `lab1.c`)
+## Cumulative distribution (more in `lab1.c`) <a name="cumulativ"></a>
 After all steps from _Probability distribution_: <br>
 by dividing it by: `Double_t a = fun1 -> Integral(0,50);`. <br>
 then `fun1->SetParameter(0, a);` <br>
@@ -164,7 +174,7 @@ TGraph2D *g = new TGraph2D();
 	}
 ```
 
-## Marginal distribution
+## Marginal distribution <a name="Marginal"></a>
 ![image](https://user-images.githubusercontent.com/87480906/164903038-cee06d37-d5a1-4ba5-b276-9c8850a2e2bc.png)
 ### g(x)
 ```c
@@ -184,19 +194,19 @@ TGraph *funh = new TGraph();
 		count2++;
 	}
 ```
-## Probability  P(5 <= X <= 10) (more in `lab1.c`)
+## Probability  P(5 <= X <= 10) (more in `lab1.c`) <a name="Prob"></a>
 After all steps from _Probability distribution_, do:  `Double_t b = fun1 -> Integral(5,10);` <br>
 
-## Expected value (more in `lab1.c`)
+## Expected value (more in `lab1.c`) <a name="expect"></a>
 After all steps from _Probability distribution_, do: `Double_t mean = fun1 -> Mean(0,50);` <br>
 
-## Variance (more in `lab1.c`)
+## Variance (more in `lab1.c`) <a name="variance"></a>
 After all steps from _Probability distribution_, do: `Double_t variance = fun1 -> Variance(0,50);` <br>
 
-## Mode (more in `lab1.c`)
+## Mode (more in `lab1.c`) <a name="Mode"></a>
 After all steps from _Probability distribution_, do: `Double_t mode = fun1 -> GetMaximumX(0,50);` <br>
 
-## Quantiles (more in `lab1.c`)
+## Quantiles (more in `lab1.c`) <a name="Quantiles"></a>
 After all steps from _Probability distribution_, do:  <br>
 `const Int_t nq = 3;` <br>
 	`Double_t xq[nq] = {0.25,0.5,0.75};` <br>
