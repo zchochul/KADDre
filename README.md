@@ -26,9 +26,10 @@
 6. [Variance](#variance)
 7. [Standard deviation](#std)
 8. [Covariance](#covariance)
-9. [Correlation coefficient rho(X,Y)](#cor coef rho)
-10. [Mode](#Mode)
-11. [Quantiles](#Quantiles)
+9. [Covariance matrix](#covariance_matrix)
+10. [Correlation coefficient rho(X,Y)](#cor_coef_rho)
+11. [Mode](#Mode)
+12. [Quantiles](#Quantiles)
 
 ## Lab1 <a name="Lab1"></a>
 [`test.c`](https://github.com/zchochul/KADDre/blob/main/test.C) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_1_EN) (28.02.2022) <br>
@@ -78,6 +79,20 @@ randomly select from the probability distribution a pair of numbers (x,y) and th
 ```
 ## Lab5 <a name="Lab5"></a>
 [`lab5.c`](https://github.com/zchochul/KADDre/blob/main/lab5.c) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_5_EN) (28.03.2022) <br>
+![image](https://user-images.githubusercontent.com/87480906/164974297-d00fb8f7-f434-4760-b473-931d0e78eb11.png)<br>
+![image](https://user-images.githubusercontent.com/87480906/164974306-762886b7-b19d-4cf9-851a-10730a1151e2.png)<br>
+Read data from file (the same as in C++):<br>
+```c
+	ifstream ifile;
+	ifile.open("dane.dat");
+	double val;
+	while(ifile>>val)
+	{
+ 		cout<<val<<endl;
+	}
+	ifile.close();
+```
+
 
 ## Lab6 <a name="Lab6"></a>
 [`lab6.c`](https://github.com/zchochul/KADDre/blob/main/lab6.c) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_6_EN) (04.04.2022) <br>
@@ -146,6 +161,8 @@ randomly select from the probability distribution a pair of numbers (x,y) and th
 > **Draw options** <br>
 >> `fun2->Draw("lego1");` <br> (like in [`lab4.c`](https://github.com/zchochul/KADDre/blob/main/lab4.c))
 >> ![image](https://user-images.githubusercontent.com/87480906/164973419-23b222f4-cda7-4aa9-b06c-4630c5e0f0d7.png)<br>
+>>  `h12->Draw("colz");`<br>
+>>  ![image](https://user-images.githubusercontent.com/87480906/164974734-98abb162-175b-4abd-89f9-1265733ec066.png)<br>
 
 ## TGraph <a name="TGraph"></a>
 >**Create TGraph** <br>
@@ -257,7 +274,10 @@ Standard deviation is the square root of the variance. When you want to use it o
 ## Covariance (like in [`lab4.c`](https://github.com/zchochul/KADDre/blob/main/lab4.c)) <a name="covariance"></a>
 To obtain covariance use: `double covxy = fun2 -> GetCovariance(1,2);`<br>
 
-## Correlation coefficient rho(X,Y)  (like in [`lab4.c`](https://github.com/zchochul/KADDre/blob/main/lab4.c)) <a name="cor coef rho"></a>
+##  Covariance matrix (like in [`lab5.c`](https://github.com/zchochul/KADDre/blob/main/lab5.c) <a name="covariance_matrix"></a>
+More on that here [lecture](http://www.if.pw.edu.pl/~lgraczyk/KADD2022/Wyklad5-2022.pdf). Long story short on diagonal we have sigma xi (so GetRMS but squared) and in other cases we have cov xixj (GetCovariance). For examples in code open  [`lab5.c`](https://github.com/zchochul/KADDre/blob/main/lab5.c).<br>
+
+## Correlation coefficient rho(X,Y)  (like in [`lab4.c`](https://github.com/zchochul/KADDre/blob/main/lab4.c)) <a name="cor_coef_rho"></a>
 To obtain correlation coefficient use: `double corfac = fun2 -> GetCorrelationFactor(1,2);`<br>
 
 ## Mode (more in [`lab1.c`](https://github.com/zchochul/KADDre/blob/main/lab1.C)) <a name="Mode"></a>
