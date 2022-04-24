@@ -222,10 +222,13 @@ After all steps from _Probability distribution_, do: `Double_t mode = fun1 -> Ge
 
 ## Quantiles (more in `lab1.c`) <a name="Quantiles"></a>
 After all steps from _Probability distribution_, do:  <br>
-`const Int_t nq = 3;` <br>
-	`Double_t xq[nq] = {0.25,0.5,0.75};` <br>
-	`Double_t yq[nq];` <br>
-	`fun1->GetQuantiles(nq,yq,xq);` <br>
+```c
+	const Int_t nq = 3;
+	Double_t xq[nq] = {0.25,0.5,0.75};
+	Double_t yq[nq];
+	fun1->GetQuantiles(nq,yq,xq);
+```
+
 
 ## Useful snipets from documentation!
 TF1 - [here](https://root.cern.ch/doc/master/classTF1.html)<br>
