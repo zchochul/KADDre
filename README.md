@@ -113,7 +113,7 @@ Read data from file (the same as in C++):<br>
 [`lab8.c`](https://github.com/zchochul/KADDre/blob/main/lab8.c)  - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_8) (18.04.2022)<br>
 ![image](https://user-images.githubusercontent.com/87480906/164978627-80d33f71-de3c-4357-a8a4-a289f4064941.png)<br>
 ![image](https://user-images.githubusercontent.com/87480906/164978634-d52f9ece-7cff-48c8-acef-19135dac004d.png)<br>
-Rot Gaussian distribution you can use:
+For Gaussian distribution you can use:
 ```c
 	TF1 *fa1n = new TF1("fa1n","ROOT::Math::gaussian_pdf(x, 0.2, 1.0)",-10,10);
 ```
