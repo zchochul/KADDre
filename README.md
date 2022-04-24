@@ -117,6 +117,12 @@ randomly select from the probability distribution a pair of numbers (x,y) and th
 >> `fun1->Draw("Surf1");`<br>
 
 ## TH1D <a name="TH1D"></a>
+> **Create** <br>
+>> `TH1D *hist = new TH1D("h", ";;Y Axis", 6, 0, 6);` (like in [`test.c`](https://github.com/zchochul/KADDre/blob/main/test.C)) <br>
+> **Fill histogram**<br>
+>> `hist -> SetBinContent(pips[i], throws[i]);`<br>
+> **Draw options** <br>
+>> `hist -> Draw();` <br>
 
 ## TH2D <a name="TH2D"></a>
 >**Create TH2D** <br>
