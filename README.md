@@ -193,6 +193,22 @@ Read data from file (the same as in C++):<br>
 ![image](https://user-images.githubusercontent.com/87480906/164972733-482da830-526f-47cc-8a9a-1af501beb8f4.png)<br>
 >> `fun3->Draw("lego1");` <br>
 
+## TMatrixD (used in [`lab5.c`](https://github.com/zchochul/KADDre/blob/main/lab5.c))<br>
+> **Create**<br>
+>> `TMatrixD matrix(row, column);`<br>
+
+> **Fill**<br>
+>> `matrix(row, column) = value` <br>
+
+> **Multiplying two matrixes**<br>
+>> `TMatrix matrix3 = matrix1 * matrix2`<br>
+
+> **Transpose a matrix**<br>
+>> `matrix.Transpose(matrix2)`<br>
+
+> **Printing**<br>
+>> `matrix.Print();`<br>
+
 ## TCanvas <a name="TCanvas"></a>
 > **Create window** <br>
 >> `TCanvas *c1 = new TCanvas("c1", "window 1", 10, 10, 800, 800);` <br>
@@ -276,9 +292,12 @@ To obtain covariance use: `double covxy = fun2 -> GetCovariance(1,2);`<br>
 
 ##  Covariance matrix (like in [`lab5.c`](https://github.com/zchochul/KADDre/blob/main/lab5.c) <a name="covariance_matrix"></a>
 More on that here [lecture](http://www.if.pw.edu.pl/~lgraczyk/KADD2022/Wyklad5-2022.pdf). Long story short on diagonal we have sigma xi (so GetRMS but squared) and in other cases we have cov xixj (GetCovariance). For examples in code open  [`lab5.c`](https://github.com/zchochul/KADDre/blob/main/lab5.c).<br>
+If you have covariance function you can obtain correlation function easily: `double corfac =  result(0,1)/sqrt(result(0,0) * result(1,1));` (like in  [`lab5.c`](https://github.com/zchochul/KADDre/blob/main/lab5.c)).<br>
+And you can also calculate errors: `double errory2 = sqrt(result(1,1));`<br>
 
 ## Correlation coefficient rho(X,Y)  (like in [`lab4.c`](https://github.com/zchochul/KADDre/blob/main/lab4.c)) <a name="cor_coef_rho"></a>
 To obtain correlation coefficient use: `double corfac = fun2 -> GetCorrelationFactor(1,2);`<br>
+If you have covariance function you can use: `double corfac =  result(0,1)/sqrt(result(0,0) * result(1,1));` (like in  [`lab5.c`](https://github.com/zchochul/KADDre/blob/main/lab5.c)).<br>
 
 ## Mode (more in [`lab1.c`](https://github.com/zchochul/KADDre/blob/main/lab1.C)) <a name="Mode"></a>
 After all steps from _Probability distribution_, do: `Double_t mode = fun1 -> GetMaximumX(0,50);` <br>
