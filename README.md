@@ -183,7 +183,7 @@ Rot Gaussian distribution you can use:
   >> `TGraph* gr = new TGraph();` <br>
 
 >**Fill TGraph**
->> `gr-> SetPoint(i, throws[i], pips[i]);`
+>> `gr-> SetPoint(i, x, y);` (more in [`test.c`](https://github.com/zchochul/KADDre/blob/main/test.C))
 
 >**Style TGraph**
 >> `gr -> SetMarkerSize(2);` <br>
