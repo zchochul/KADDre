@@ -12,19 +12,19 @@
 
 
 ## Lab1 <a name="Lab1"></a>
-`test.c` - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_1_EN) (28.02.2022) <br>
+[`test.c`](https://github.com/zchochul/KADDre/blob/main/test.C) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_1_EN) (28.02.2022) <br>
 ![image](https://user-images.githubusercontent.com/87480906/164894115-a8760881-77da-45c1-9bba-c993338c5c28.png)
 ![image](https://user-images.githubusercontent.com/87480906/164894119-3f323396-fbcd-4868-952f-159d75755c0f.png)
 
 ## Lab2 <a name="Lab2"></a>
-`lab1.c` - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_2_EN) (07.03.2022) <br>
+[`lab1.c`](https://github.com/zchochul/KADDre/blob/main/lab1.C) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_2_EN) (07.03.2022) <br>
 ![image](https://user-images.githubusercontent.com/87480906/164894897-324e1326-5bcc-48c0-b9d0-0bb949a2928a.png)
 ![image](https://user-images.githubusercontent.com/87480906/164894774-4a806203-0761-4073-8e57-2be95a8e2ead.png)
 ![image](https://user-images.githubusercontent.com/87480906/164894781-e3a34ef5-2273-488d-b424-d4da6b0a377c.png)
 
 
 ## Lab3 <a name="Lab3"></a>
-`lab3.c` - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_3_EN) (14.03.2022) <br>
+[`lab3.c`](https://github.com/zchochul/KADDre/blob/main/lab3.c) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_3_EN) (14.03.2022) <br>
 ![image](https://user-images.githubusercontent.com/87480906/164895932-e5ea2389-2bdb-4ad6-b4f6-10878bdca759.png)
 ```c
 double fcn(double *x, double *params)
@@ -37,7 +37,7 @@ double fcn(double *x, double *params)
 ![image](https://user-images.githubusercontent.com/87480906/164895944-9d971d97-18cf-43a9-88ed-3b3a41e59792.png)
 
 ## Lab4 <a name="Lab4"></a>
-`lab4.c` - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_4_EN) (21.03.2022) <br>
+[`lab4.c`](https://github.com/zchochul/KADDre/blob/main/lab4.c) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_4_EN) (21.03.2022) <br>
 ![image](https://user-images.githubusercontent.com/87480906/164905937-3de4698c-5994-4d66-87f6-698bc6b8462b.png)
 ```c
 double fcn(double *x, double *params)
@@ -58,10 +58,16 @@ randomly select from the probability distribution a pair of numbers (x,y) and th
 	}
 ```
 ## Lab5 <a name="Lab5"></a>
-`lab5.c` - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_5_EN) (28.03.2022) <br>
+[`lab5.c`](https://github.com/zchochul/KADDre/blob/main/lab5.c) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_5_EN) (28.03.2022) <br>
 
 ## Lab6 <a name="Lab6"></a>
-`lab6.c` - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_6_EN) (04.04.2022) <br>
+[`lab6.c`](https://github.com/zchochul/KADDre/blob/main/lab6.c) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_6_EN) (04.04.2022) <br>
+
+## Lab7 <a name="Lab7"></a>
+[`lab16.c`](https://github.com/zchochul/KADDre/blob/main/lab16.c)  - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_7_EN) (11.04.2022)
+
+## Lab8 <a name="Lab8"></a>
+[`lab8.c`](https://github.com/zchochul/KADDre/blob/main/lab8.c)  - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_8) (18.04.2022)
 
 ## TF1 <a name="TF1"></a>
 > **Create function using TF1** <br>
