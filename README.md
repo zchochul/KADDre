@@ -33,6 +33,7 @@ This repository is based on the laboratories for the subject Komputerowa Analiza
 12. [Quantiles](#Quantiles)
 13. [Linear congruent generator of pseudorandom numbers](#LCG)
 14. [ Spectral test](#spectral_test)
+15. [Estimation of Pi](#pi)
 
 ## Lab1 <a name="Lab1"></a>
 [`test.c`](https://github.com/zchochul/KADDre/blob/main/test.C) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_1_EN) (28.02.2022) <br>
@@ -186,6 +187,9 @@ Read data from file (the same as in C++):<br>
 >> ![image](https://user-images.githubusercontent.com/87480906/164972950-6a208f4c-4955-4657-8d14-101bf93cadf9.png)<br>
 >> `gr -> Draw("APL");` Connect points with a line <br>
 >> ![image](https://user-images.githubusercontent.com/87480906/164972933-04a95cd3-21e2-4f09-856d-69217eb131b8.png) <br>
+>> `accepted -> Draw("SameP");`<br>
+>> ![image](https://user-images.githubusercontent.com/87480906/164978562-d99c9809-1ca7-4320-8456-e7dbc5417d0b.png)
+
 
 ## TGraph2D <a name="TGraph2D"></a>
 >**Create TGraph2D** <br>
@@ -326,6 +330,9 @@ When `c=0` then we get multiplicative generator (MLCG).
 
 ## Spectral test (more in [`lab6.c`](https://github.com/zchochul/KADDre/blob/main/lab6.c)) <a name="spectral_test"></a>
 Plot `(x[n], x[n+1])` to see the quality of the generator.  The obtained graph will show a spectral pattern of the generator - hence the name of the test. If the points are distributed uniformly, the test can be judged good.
+
+## Estimation of PI <a name="pi"></a>
+Using von Neuman (Monte Carlo) method it is possible to calculate estimation of PI. In order to calculate the Pi, we randomly generate two numbers x and y from the uniform distribution [0,1] and we check whether the pair falls within the circle of the radius equal to 1. Next, by calculating the ratio of accepted pairs to all of them, you approximate the ratio of areas of the circle to the rectangle.
 
 ## Useful snipets from documentation!
 TF1 - [here](https://root.cern.ch/doc/master/classTF1.html)<br>
