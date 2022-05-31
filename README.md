@@ -63,6 +63,8 @@ This repository is based on the laboratories for the subject Komputerowa Analiza
 </center>
 	</table>
 
+<details><summary>First part of the semester</summary>
+<p>
 
 ## Lab1 <a name="Lab1"></a>
 [`test.c`](https://github.com/zchochul/KADDre/blob/main/test.C) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_1_EN) (28.02.2022) <br>
@@ -145,6 +147,12 @@ For Gaussian distribution you can use:
 	TF1 *fa1n = new TF1("fa1n","ROOT::Math::gaussian_pdf(x, 0.2, 1.0)",-10,10);
 ```
 
+</p>
+</details>
+
+<details><summary>Second part of the semester</summary>
+<p>
+
 ## Lab9 <a name="Lab9"></a>
 [`lab9.c`](https://github.com/zchochul/KADDre/blob/main/lab9.c) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_9_EN) (9.05.2022)<br>
 ![image](https://user-images.githubusercontent.com/87480906/171261306-6682d64c-db3a-4f20-81f6-2eb8c549a883.png)<br>
@@ -161,6 +169,11 @@ For Gaussian distribution you can use:
 ## Lab12 <a name="Lab12"></a>
 [`lab12.c`](https://github.com/zchochul/KADDre/blob/main/lab12.c) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_12_EN) (30.05.2022)<br>
 ![image](https://user-images.githubusercontent.com/87480906/171264269-02cb4274-772e-4b2a-abe2-02f7c6d325fa.png)<br>
+
+</p>
+</details>
+
+
 
 ## TF1 <a name="TF1"></a>
 > **Create function using TF1** <br>
