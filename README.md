@@ -1,6 +1,7 @@
 # KADDre
 This repository is based on the laboratories for the subject Komputerowa Analiza Danych Doświadczalnych (KADD) taught at WUT. For more info open [dr Łukasz Graczykowski's website](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2021/2022).
 # Laboratories
+## First test
 1. [Lab1](#Lab1)
 2. [Lab2](#Lab2)
 3. [Lab3](#Lab3)
@@ -9,6 +10,7 @@ This repository is based on the laboratories for the subject Komputerowa Analiza
 6. [Lab6](#Lab6)
 7. [Lab7](#Lab7)
 8. [Lab8](#Lab8)
+## Second test
 9. [Lab9](#Lab9)
 10. [Lab10](#Lab10)
 11. [Lab11](#Lab11)
@@ -126,15 +128,20 @@ For Gaussian distribution you can use:
 
 ## Lab9 <a name="Lab9"></a>
 [`lab9.c`](https://github.com/zchochul/KADDre/blob/main/lab9.c) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_9_EN) (9.05.2022)<br>
+![image](https://user-images.githubusercontent.com/87480906/171261306-6682d64c-db3a-4f20-81f6-2eb8c549a883.png)<br>
+![image](https://user-images.githubusercontent.com/87480906/171261358-b40534bd-212b-48e9-850e-95218f716671.png)<br>
 
 ## Lab10 <a name="Lab10"></a>
-[`lab10.c`](https://github.com/zchochul/KADDre/blob/main/lab10.c) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_10_EN)(16.05.2022)
+[`lab10.c`](https://github.com/zchochul/KADDre/blob/main/lab10.c) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_10_EN) (16.05.2022)<br>
+![image](https://user-images.githubusercontent.com/87480906/171261708-f4f4fea5-d2e2-4062-a424-beec6f0edf6f.png)<br>
 
 ## Lab11 <a name="Lab11"></a>
 [`lab11_J_S.c`](https://github.com/zchochul/KADDre/blob/main/lab11_J_S.c) [for root v5] and [`lab11.c`](https://github.com/zchochul/KADDre/blob/main/lab11.c) [for root v6] - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_11_EN) (23.05.2022) <br>
+![image](https://user-images.githubusercontent.com/87480906/171261858-bd56849c-f4c9-427e-9691-fbe0b9c0a8e7.png)<br>
 
 ## Lab12 <a name="Lab12"></a>
-[`lab12.c`](https://github.com/zchochul/KADDre/blob/main/lab12.c) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_12_EN)(30.05.2022)<br>
+[`lab12.c`](https://github.com/zchochul/KADDre/blob/main/lab12.c) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_12_EN) (30.05.2022)<br>
+![image](https://user-images.githubusercontent.com/87480906/171264269-02cb4274-772e-4b2a-abe2-02f7c6d325fa.png)<br>
 
 ## TF1 <a name="TF1"></a>
 > **Create function using TF1** <br>
