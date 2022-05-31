@@ -63,6 +63,7 @@ This repository is based on the laboratories for the subject Komputerowa Analiza
 </center>
 	</table>
 
+# Tasks
 <details><summary>First part of the semester</summary>
 <p>
 
