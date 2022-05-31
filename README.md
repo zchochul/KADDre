@@ -13,6 +13,8 @@ This repository is based on the laboratories for the subject Komputerowa Analiza
 10. [Lab10](#Lab10)
 11. [Lab11](#Lab11)
 12. [Lab12](#Lab12)
+
+
 # Root help ;)
 1. [TF1](#TF1)
 2. [TGraph](#TGraph)
@@ -22,6 +24,8 @@ This repository is based on the laboratories for the subject Komputerowa Analiza
 6. [TGraph](#TGraph)
 7. [TGraph2D](#TGraph2D)
 8. [TCanvas](#TCanvas)
+
+
 # Math help ;)
 1. [Probability distribution](#PDF)
 2. [Cumulative distribution](#cumulativ)
@@ -49,7 +53,6 @@ This repository is based on the laboratories for the subject Komputerowa Analiza
 ![image](https://user-images.githubusercontent.com/87480906/164894897-324e1326-5bcc-48c0-b9d0-0bb949a2928a.png)
 ![image](https://user-images.githubusercontent.com/87480906/164894774-4a806203-0761-4073-8e57-2be95a8e2ead.png)
 ![image](https://user-images.githubusercontent.com/87480906/164894781-e3a34ef5-2273-488d-b424-d4da6b0a377c.png)
-
 
 ## Lab3 <a name="Lab3"></a>
 [`lab3.c`](https://github.com/zchochul/KADDre/blob/main/lab3.c) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_3_EN) (14.03.2022) <br>
@@ -85,6 +88,7 @@ randomly select from the probability distribution a pair of numbers (x,y) and th
 		fun2->Fill(px,py); //fun2 is TH2D histogram 
 	}
 ```
+
 ## Lab5 <a name="Lab5"></a>
 [`lab5.c`](https://github.com/zchochul/KADDre/blob/main/lab5.c) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_5_EN) (28.03.2022) <br>
 ![image](https://user-images.githubusercontent.com/87480906/164974297-d00fb8f7-f434-4760-b473-931d0e78eb11.png)<br>
@@ -101,12 +105,10 @@ Read data from file (the same as in C++):<br>
 	ifile.close();
 ```
 
-
 ## Lab6 <a name="Lab6"></a>
 [`lab6.c`](https://github.com/zchochul/KADDre/blob/main/lab6.c) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_6_EN) (04.04.2022) <br>
 ![image](https://user-images.githubusercontent.com/87480906/164976280-28f80e4f-e35c-4260-bcc8-ee6c119dbd01.png)<br>
 ![image](https://user-images.githubusercontent.com/87480906/164976293-4f0f1ff8-030d-46e3-b3f4-a8e2d1c19946.png)<br>
-
 
 ## Lab7 <a name="Lab7"></a>
 [`lab16.c`](https://github.com/zchochul/KADDre/blob/main/lab16.c)  - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_7_EN) (11.04.2022) <br>
@@ -123,10 +125,16 @@ For Gaussian distribution you can use:
 ```
 
 ## Lab9 <a name="Lab9"></a>
-## Lab10 <a name="Lab10"></a>
-## Lab11 <a name="Lab11"></a>
-## Lab12 <a name="Lab12"></a>
+[`lab9.c`](https://github.com/zchochul/KADDre/blob/main/lab9.c) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_9_EN) (9.05.2022)<br>
 
+## Lab10 <a name="Lab10"></a>
+[`lab10.c`](https://github.com/zchochul/KADDre/blob/main/lab10.c) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_10_EN)(16.05.2022)
+
+## Lab11 <a name="Lab11"></a>
+[`lab11_J_S.c`](https://github.com/zchochul/KADDre/blob/main/lab11_J_S.c) [for root v5] and [`lab11.c`](https://github.com/zchochul/KADDre/blob/main/lab11.c) [for root v6] - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_11_EN) (23.05.2022) <br>
+
+## Lab12 <a name="Lab12"></a>
+[`lab12.c`](https://github.com/zchochul/KADDre/blob/main/lab12.c) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_12_EN)(30.05.2022)<br>
 
 ## TF1 <a name="TF1"></a>
 > **Create function using TF1** <br>
