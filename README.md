@@ -9,6 +9,10 @@ This repository is based on the laboratories for the subject Komputerowa Analiza
 6. [Lab6](#Lab6)
 7. [Lab7](#Lab7)
 8. [Lab8](#Lab8)
+9. [Lab9](#Lab9)
+10. [Lab10](#Lab10)
+11. [Lab11](#Lab11)
+12. [Lab12](#Lab12)
 # Root help ;)
 1. [TF1](#TF1)
 2. [TGraph](#TGraph)
@@ -117,6 +121,11 @@ For Gaussian distribution you can use:
 ```c
 	TF1 *fa1n = new TF1("fa1n","ROOT::Math::gaussian_pdf(x, 0.2, 1.0)",-10,10);
 ```
+
+## Lab9 <a name="Lab9"></a>
+## Lab10 <a name="Lab10"></a>
+## Lab11 <a name="Lab11"></a>
+## Lab12 <a name="Lab12"></a>
 
 
 ## TF1 <a name="TF1"></a>
