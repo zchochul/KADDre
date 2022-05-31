@@ -26,7 +26,9 @@ This repository is based on the laboratories for the subject Komputerowa Analiza
 6. [TGraph](#TGraph)
 7. [TGraph2D](#TGraph2D)
 8. [TCanvas](#TCanvas)
-
+<!---
+tu jeszcze fity
+-->
 
 # Math help ;)
 1. [Probability distribution](#PDF)
@@ -44,6 +46,9 @@ This repository is based on the laboratories for the subject Komputerowa Analiza
 13. [Linear congruent generator of pseudorandom numbers](#LCG)
 14. [ Spectral test](#spectral_test)
 15. [Estimation of Pi](#pi)
+<!---
+tu na 100% jeszcze testy statystyczne
+-->
 
 ## Lab1 <a name="Lab1"></a>
 [`test.c`](https://github.com/zchochul/KADDre/blob/main/test.C) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_1_EN) (28.02.2022) <br>
@@ -187,19 +192,21 @@ For Gaussian distribution you can use:
 > **Draw options** <br>
 >> `hist -> Draw();` <br>
 
-> **Projection of TH2D on TH1D** <br> (like in [`lab4.c`](https://github.com/zchochul/KADDre/blob/main/lab4.c))
+> **Projection of TH2D on TH1D** (like in [`lab4.c`](https://github.com/zchochul/KADDre/blob/main/lab4.c))<br>
 >> Creating: `TH1D * projh2Y = fun2->ProjectionY();` <br>
 
+> **Fitting TF1 object to TH1D object** (like in [`lab9.c`](https://github.com/zchochul/KADDre/blob/main/lab9.c))
+>> `hist -> Fit(f1);` <- it draws TH1D object with TF1 Fit 
 ## TH2D <a name="TH2D"></a>
 >**Create TH2D** <br>
->> `TH2D *fun2 = new TH2D("fun2", "gestosc", 20, xmin, xmax, 20, ymin, ymax);`<br> (like in [`lab4.c`](https://github.com/zchochul/KADDre/blob/main/lab4.c))
+>> `TH2D *fun2 = new TH2D("fun2", "gestosc", 20, xmin, xmax, 20, ymin, ymax);` (like in [`lab4.c`](https://github.com/zchochul/KADDre/blob/main/lab4.c))<br>
 
 > **Filling with data** <br>
->> `fun2->Fill(px,py);`<br> (like in [`lab4.c`](https://github.com/zchochul/KADDre/blob/main/lab4.c))
->>  `fun3->SetBinContent(xs, ys, fun2->Integral(0,xs, 0, ys));` (like in [`lab4.c`](https://github.com/zchochul/KADDre/blob/main/lab4.c))
+>> `fun2->Fill(px,py);` (like in [`lab4.c`](https://github.com/zchochul/KADDre/blob/main/lab4.c))<br>
+>>  `fun3->SetBinContent(xs, ys, fun2->Integral(0,xs, 0, ys));` (like in [`lab4.c`](https://github.com/zchochul/KADDre/blob/main/lab4.c))<br>
 
 > **Draw options** <br>
->> `fun2->Draw("lego1");` <br> (like in [`lab4.c`](https://github.com/zchochul/KADDre/blob/main/lab4.c))
+>> `fun2->Draw("lego1");`  (like in [`lab4.c`](https://github.com/zchochul/KADDre/blob/main/lab4.c))<br>
 >> ![image](https://user-images.githubusercontent.com/87480906/164973419-23b222f4-cda7-4aa9-b06c-4630c5e0f0d7.png)<br>
 >>  `h12->Draw("colz");`<br>
 >>  ![image](https://user-images.githubusercontent.com/87480906/164974734-98abb162-175b-4abd-89f9-1265733ec066.png)<br>
