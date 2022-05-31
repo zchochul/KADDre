@@ -1,7 +1,17 @@
 # KADDre
 This repository is based on the laboratories for the subject Komputerowa Analiza Danych Doświadczalnych (KADD) taught at WUT. For more info open [dr Łukasz Graczykowski's website](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2021/2022).
-# Laboratories
-## First test
+# Shortcuts
+
+<table>
+<center>
+<tr>
+<th> Laboratories </th>
+<th> Root help ;) </th>
+<th> Math help ;) </th>
+</tr>
+<tr>
+<td>
+	
 1. [Lab1](#Lab1)
 2. [Lab2](#Lab2)
 3. [Lab3](#Lab3)
@@ -10,14 +20,14 @@ This repository is based on the laboratories for the subject Komputerowa Analiza
 6. [Lab6](#Lab6)
 7. [Lab7](#Lab7)
 8. [Lab8](#Lab8)
-## Second test
 9. [Lab9](#Lab9)
 10. [Lab10](#Lab10)
 11. [Lab11](#Lab11)
 12. [Lab12](#Lab12)
-
-
-# Root help ;)
+	
+</td>
+<td>
+	
 1. [TF1](#TF1)
 2. [TGraph](#TGraph)
 3. [TF2](#TF2)
@@ -26,11 +36,11 @@ This repository is based on the laboratories for the subject Komputerowa Analiza
 6. [TGraph](#TGraph)
 7. [TGraph2D](#TGraph2D)
 8. [TCanvas](#TCanvas)
-<!---
-tu jeszcze fity
--->
+	
+</td>
 
-# Math help ;)
+<td>
+	
 1. [Probability distribution](#PDF)
 2. [Cumulative distribution](#cumulativ)
 3. [Marginal distribution](#Marginal)
@@ -46,9 +56,13 @@ tu jeszcze fity
 13. [Linear congruent generator of pseudorandom numbers](#LCG)
 14. [ Spectral test](#spectral_test)
 15. [Estimation of Pi](#pi)
-<!---
-tu na 100% jeszcze testy statystyczne
--->
+	
+</td>
+	
+</tr>
+</center>
+	</table>
+
 
 ## Lab1 <a name="Lab1"></a>
 [`test.c`](https://github.com/zchochul/KADDre/blob/main/test.C) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_1_EN) (28.02.2022) <br>
