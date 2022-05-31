@@ -67,14 +67,28 @@ This repository is based on the laboratories for the subject Komputerowa Analiza
 
 ## Lab1 <a name="Lab1"></a>
 [`test.c`](https://github.com/zchochul/KADDre/blob/main/test.C) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_1_EN) (28.02.2022) <br>
+<details><summary>Results</summary>
+<p>
+	
 ![image](https://user-images.githubusercontent.com/87480906/164894115-a8760881-77da-45c1-9bba-c993338c5c28.png)
 ![image](https://user-images.githubusercontent.com/87480906/164894119-3f323396-fbcd-4868-952f-159d75755c0f.png)
+	
+</p>
+</details>
+
 
 ## Lab2 <a name="Lab2"></a>
 [`lab1.c`](https://github.com/zchochul/KADDre/blob/main/lab1.C) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_2_EN) (07.03.2022) <br>
+<details><summary>Results</summary>
+<p>
+
 ![image](https://user-images.githubusercontent.com/87480906/164894897-324e1326-5bcc-48c0-b9d0-0bb949a2928a.png)
 ![image](https://user-images.githubusercontent.com/87480906/164894774-4a806203-0761-4073-8e57-2be95a8e2ead.png)
 ![image](https://user-images.githubusercontent.com/87480906/164894781-e3a34ef5-2273-488d-b424-d4da6b0a377c.png)
+
+</p>
+</details>
+
 
 ## Lab3 <a name="Lab3"></a>
 [`lab3.c`](https://github.com/zchochul/KADDre/blob/main/lab3.c) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_3_EN) (14.03.2022) <br>
@@ -87,7 +101,13 @@ double fcn(double *x, double *params)
 		return 0;
 	}
 ```
+<details><summary>Results</summary>
+<p>
+
 ![image](https://user-images.githubusercontent.com/87480906/164895944-9d971d97-18cf-43a9-88ed-3b3a41e59792.png)
+
+</p>
+</details>
 
 ## Lab4 <a name="Lab4"></a>
 [`lab4.c`](https://github.com/zchochul/KADDre/blob/main/lab4.c) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_4_EN) (21.03.2022) <br>
@@ -100,8 +120,7 @@ double fcn(double *x, double *params)
 		return 0;
 	}
 ```
-![image](https://user-images.githubusercontent.com/87480906/164906289-2276233a-97c6-4a52-93e6-fa16c91b3cef.png)
-![image](https://user-images.githubusercontent.com/87480906/164906467-d6e839f0-59d6-4cfd-872b-50f38bcc8d0e.png)
+
 randomly select from the probability distribution a pair of numbers (x,y) and then fill with the a histogram of the probability distribution f(x,y): <br>
 ```c
 	double px, py;
@@ -110,11 +129,18 @@ randomly select from the probability distribution a pair of numbers (x,y) and th
 		fun2->Fill(px,py); //fun2 is TH2D histogram 
 	}
 ```
+<details><summary>Results</summary>
+<p>
+
+![image](https://user-images.githubusercontent.com/87480906/164906289-2276233a-97c6-4a52-93e6-fa16c91b3cef.png)
+![image](https://user-images.githubusercontent.com/87480906/164906467-d6e839f0-59d6-4cfd-872b-50f38bcc8d0e.png)
+
+</p>
+</details>
 
 ## Lab5 <a name="Lab5"></a>
 [`lab5.c`](https://github.com/zchochul/KADDre/blob/main/lab5.c) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_5_EN) (28.03.2022) <br>
-![image](https://user-images.githubusercontent.com/87480906/164974297-d00fb8f7-f434-4760-b473-931d0e78eb11.png)<br>
-![image](https://user-images.githubusercontent.com/87480906/164974306-762886b7-b19d-4cf9-851a-10730a1151e2.png)<br>
+
 Read data from file (the same as in C++):<br>
 ```c
 	ifstream ifile;
@@ -127,24 +153,54 @@ Read data from file (the same as in C++):<br>
 	ifile.close();
 ```
 
+<details><summary>Results</summary>
+<p>
+
+![image](https://user-images.githubusercontent.com/87480906/164974297-d00fb8f7-f434-4760-b473-931d0e78eb11.png)<br>
+![image](https://user-images.githubusercontent.com/87480906/164974306-762886b7-b19d-4cf9-851a-10730a1151e2.png)<br>
+
+</p>
+</details>
+
 ## Lab6 <a name="Lab6"></a>
 [`lab6.c`](https://github.com/zchochul/KADDre/blob/main/lab6.c) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_6_EN) (04.04.2022) <br>
+
+<details><summary>Results</summary>
+<p>
+
 ![image](https://user-images.githubusercontent.com/87480906/164976280-28f80e4f-e35c-4260-bcc8-ee6c119dbd01.png)<br>
 ![image](https://user-images.githubusercontent.com/87480906/164976293-4f0f1ff8-030d-46e3-b3f4-a8e2d1c19946.png)<br>
 
+</p>
+</details>
+
 ## Lab7 <a name="Lab7"></a>
 [`lab16.c`](https://github.com/zchochul/KADDre/blob/main/lab16.c)  - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_7_EN) (11.04.2022) <br>
+
+<details><summary>Results</summary>
+<p>
+
 ![image](https://user-images.githubusercontent.com/87480906/164980971-e1f589da-f099-481e-8a34-f45c41ca0131.png)<br>
 ![image](https://user-images.githubusercontent.com/87480906/164980986-a61af6a0-0b27-4d7c-afa8-d95d918e2382.png)<br>
 
+</p>
+</details>
+
 ## Lab8 <a name="Lab8"></a>
 [`lab8.c`](https://github.com/zchochul/KADDre/blob/main/lab8.c)  - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_8) (18.04.2022)<br>
-![image](https://user-images.githubusercontent.com/87480906/164978627-80d33f71-de3c-4357-a8a4-a289f4064941.png)<br>
-![image](https://user-images.githubusercontent.com/87480906/164978634-d52f9ece-7cff-48c8-acef-19135dac004d.png)<br>
+
 For Gaussian distribution you can use:
 ```c
 	TF1 *fa1n = new TF1("fa1n","ROOT::Math::gaussian_pdf(x, 0.2, 1.0)",-10,10);
 ```
+<details><summary>Results</summary>
+<p>
+
+![image](https://user-images.githubusercontent.com/87480906/164978627-80d33f71-de3c-4357-a8a4-a289f4064941.png)<br>
+![image](https://user-images.githubusercontent.com/87480906/164978634-d52f9ece-7cff-48c8-acef-19135dac004d.png)<br>
+
+</p>
+</details>
 
 ## Lab9 <a name="Lab9"></a>
 [`lab9.c`](https://github.com/zchochul/KADDre/blob/main/lab9.c) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_9_EN) (9.05.2022)<br>
