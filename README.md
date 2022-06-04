@@ -194,6 +194,13 @@ For Gaussian distribution you can use:
 ```c
 	TF1 *fa1n = new TF1("fa1n","ROOT::Math::gaussian_pdf(x, 0.2, 1.0)",-10,10);
 ```
+For example to create normal (Gaussian) distribution with x0 = 0 and sigma = 1 use:
+```c
+	double ROOT::Math::gaussian_pdf	(	double 	x,
+						double 	sigma = 1,
+						double 	x0 = 0 
+)	
+```
 <details><summary>Results</summary>
 <p>
 
