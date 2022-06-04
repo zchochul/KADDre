@@ -187,6 +187,13 @@ Read data from file (the same as in C++):<br>
 </p>
 </details>
 
+# For second test
+[`lab8.c`] - sploty i deska Galtona <br> 
+[`lab9.c`] - rozkład chi^2, dystybuanta chi^2, splot n jednorodnych rozkładów (a później Fit) <br>
+[`lab10.c`] - Dopasowanie metodą największej wiarygodności i Fit do punktów pomiarowych, a później sprawdzamy dopasowanie przy użyciu Chi^2 <br>
+[`lab11.c`] - Dopasowanie MNK do wielomianów <br>
+[`lab12.c`] - Dopasowanie pakietem MINUIT <br>
+
 ## Lab8 <a name="Lab8"></a>
 [`lab8.c`](https://github.com/zchochul/KADDre/blob/main/lab8.c)  - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_8) (18.04.2022)<br>
 
