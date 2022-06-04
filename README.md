@@ -56,6 +56,7 @@ This repository is based on the laboratories for the subject Komputerowa Analiza
 13. [Linear congruent generator of pseudorandom numbers](#LCG)
 14. [ Spectral test](#spectral_test)
 15. [Estimation of Pi](#pi)
+16. [Convolution (Splot)](#splot)
 	
 </td>
 	
@@ -447,6 +448,11 @@ Plot `(x[n], x[n+1])` to see the quality of the generator.  The obtained graph w
 
 ## Estimation of PI <a name="pi"></a>
 Using von Neuman (Monte Carlo) method it is possible to calculate estimation of PI. In order to calculate the Pi, we randomly generate two numbers x and y from the uniform distribution [0,1] and we check whether the pair falls within the circle of the radius equal to 1. Next, by calculating the ratio of accepted pairs to all of them, you approximate the ratio of areas of the circle to the rectangle.
+
+## Convolution (splot) <a name = "splot"></a>
+Like in [`lab8.c`](https://github.com/zchochul/KADDre/blob/main/lab8.c) we use information from [lecture](http://www.if.pw.edu.pl/~lgraczyk/KADD2022/Wyklad7-2022.pdf).<br> 
+The more uniform distributions you are convoluting the more the effect will look like a Gauss (Central limit theorem).
+When you convolute normal distributions variances are adding up and mean values are also adding up.
 
 ## Useful snipets from documentation!
 TF1 - [here](https://root.cern.ch/doc/master/classTF1.html)<br>
