@@ -7,7 +7,7 @@ void splot(TF1 **f, int k, TH1D *h, int n){
 	
 	for (int i=0; i < n; i++){
 		for (int j=0; j< k; j++){
-			z+ = f[j]->GetRandom();
+			z += f[j]->GetRandom();
 		}	
 		h->Fill(z);
 		z=0;
