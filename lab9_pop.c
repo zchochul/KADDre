@@ -1,5 +1,17 @@
 TF1 *fun1;
 
+void splot(int k, TH1D *h, int n) {
+	double u, sum = 0.0;
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < k; j++) {
+			u = gRandom -> Uniform(0, 1);
+			sum += u;
+		}
+		h -> Fill(sum);
+		sum = 0.0;
+	}
+} 
+
 double fcn(double *x, double *k)
 	{
 		if(x[0]>0)
@@ -50,31 +62,26 @@ void lab9_pop(){
 		fun2->SetParameter(0,j);
 		
 		if(j==0)
-			fun2->DrawCopy();
+			fun2->Draw();
 		else
-			fun2->DrawCopy("Same");	
+			fun2->Draw("Same");	
 	}
 	
 	//Gauss FIT
 	c1->cd(3);
-	double m=0; //liczba splotow
-	double u=0;
-	double n=1000; //liczba iteracji
-	do{
-		m++;
-		TH1D *h1 = new TH1D("h", ";;Y Axis", 100, -0.5, 4);
-		TF1 *fun1 = new TF1("fun1", "gaus", -0.5, 4);
-		
-		for(int i = 0; i<n; i++){
-			u = 0;
-			for(int j =0; j<m; j++){
-				u+=gRandom->Uniform(0,1);
-			}
-			h1->Fill(u);
-		}
-		h1->Fit(fun1);
-		cout<<"ratio = " <<fun1->GetChisquare()/fun1->GetNDF() <<endl;
-	}while(fun1->GetChisquare()/fun1->GetNDF()>1.0);
-	
+	int n = 2, ss;
+	double chisq;
+	TF1 *gauss = new TF1();
+	TH1D *hist;
+	do {
+		hist = new TH1D("hist", "histogram", 100, 0, 10);
+		splot(n, hist, 10000);
+		hist -> Fit("gaus");
+		gauss = hist -> GetFunction("gaus");
+		ss = gauss -> GetNDF();
+		chisq = gauss -> GetChisquare();
+		n++;
+	}
+	while(chisq/ss >= 1);
 	
 }
