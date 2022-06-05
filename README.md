@@ -224,6 +224,10 @@ For example to create normal (Gaussian) distribution with x0 = 0 and sigma = 1 u
 
 ## Lab10 <a name="Lab10"></a>
 [`lab10.c`](https://github.com/zchochul/KADDre/blob/main/lab10.c) - [task](http://www.if.pw.edu.pl/~lgraczyk/wiki/index.php/KADD_2022_Laboratorium_10_EN) (16.05.2022)<br>
+To compute the Poisson distribution function for (x,par) use:<br>
+```c
+	Double_t PoissonI(Double_t x, Double_t par)
+```
 ![image](https://user-images.githubusercontent.com/87480906/171261708-f4f4fea5-d2e2-4062-a424-beec6f0edf6f.png)<br>
 
 ## Lab11 <a name="Lab11"></a>
